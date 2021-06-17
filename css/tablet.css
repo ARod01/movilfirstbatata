@@ -1,0 +1,36 @@
+.carousel{
+    overflow-x: hidden;
+}
+.carousel__slider{
+    display: flex;
+    justify-content: space-evenly;
+}
+.carouselCard{
+    overflow-x: hidden;
+}
+.carouselCard__slider{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-two{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-two span{
+    position: absolute;
+    margin-top: -430px;
+}
+.section-two h3{
+    width: 100%;
+}
+.section-two p{
+    width: 100%;
+}
+.section-two article{
+    width: 40%;
+    margin: 0 3% 30px;
+}

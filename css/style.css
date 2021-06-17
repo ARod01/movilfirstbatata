@@ -129,10 +129,9 @@ header div a span {
 }
 .carousel__slider-item {
   display: inline-block;
-  width: 240px;
-  height: 320px;
-  margin-right: 40px;
-  margin-left: 30px;
+  width: 80%;
+  height: 300px;
+  margin: 0 10%;
 }
 .section-one__titleCoin {
   padding-left: 10px;
@@ -379,8 +378,6 @@ position relative p {
 position relative article {
   width: 90%;
   max-height: 170px;
-  margin-bottom: 30px;
-  background-color: #282623;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,6 +388,9 @@ position relative article {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: start;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #282623;
 }
 .section-two article img,
 position relative article img {
@@ -534,18 +534,20 @@ position relative article p {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.carousel {
+.carouselCard {
   position: relative;
   width: 100%;
   overflow-x: scroll;
 }
-.carousel__slider {
+.carouselCard__slider {
   white-space: nowrap;
 }
-.carousel__slider-item {
+.carouselCard__slider-item {
   display: inline-block;
+  margin-top: 10px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-bottom: 20px;
 }
 .footer {
   width: 100%;
