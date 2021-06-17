@@ -1,0 +1,27 @@
+{
+  "name": "probatata",
+  "version": "1.0.0",
+  "description": "test movilfirts and media query",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ARod01/movilfirstbatata.git"
+  },
+  "keywords": [
+    "movilfirst",
+    "stylus",
+    "mediaquery"
+  ],
+  "author": "ARod01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ARod01/movilfirstbatata/issues"
+  },
+  "homepage": "https://github.com/ARod01/movilfirstbatata#readme",
+  "dependencies": {
+    "stylus": "^0.54.8"
+  }
+}
