@@ -19,36 +19,51 @@
         margin-top: 20px
         font-size: 14px
         color: text-grey
+.carousel
+    position relative
+    width 100%
+    min-width 320px
+    overflow-x scroll
+    padding 20px
+    &__slider
+        white-space nowrap
+        margin-top 10px
+        padding-bottom 10px
+        &-item
+            display inline-block
+            width 240px
+            height 320px
+            margin-right 40px
+            margin-left 30px
+/*             transform-origin center left */
 
-.section-one__slider
-    width: 100%
-    margin-top: 30px 
-    padding: 0 12.5% 0 12.5%
-    .section-one__titleCoin
-        title(color-secundary)
-    .section-one__titleComission
-        title(#1A9AF7)
-    .section-one__coin
-        grid-template-columns: 50% 30% 20%
-        display-grid()
-        &-name
-            name()
-        &-price
-            justify-self: end
-            price()
-        &-span1
-            trending("../assets/icons/trending-up.png")
-        &-span2
-            trending("../assets/icons/trending-down.png")
-    .section-one__coin-update
-        update(text-orange)
-    .section-one__comission-update
-        update(#E7F5FF)
-    .section-one__comission
-        grid-template-columns: 60% 40%
-        display-grid()
-        &-name
-            name()
-        &-price
-            justify-self: center
-            price()
+.section-one__titleCoin
+    title(color-secundary)
+.section-one__titleComission
+    title(#1A9AF7)
+.section-one__coin
+    margin-top 10px
+    grid-template-columns: 50% 30% 20%
+    display-grid()
+    &-name
+        name()
+    &-price
+        justify-self: end
+        price()
+    &-span1
+        trending("../assets/icons/trending-up.png")
+    &-span2
+        trending("../assets/icons/trending-down.png")
+.section-one__coin-update
+    update(text-orange)
+.section-one__comission-update
+    update(#E7F5FF)
+.section-one__comission
+    margin-top 10px
+    grid-template-columns: 60% 40%
+    display-grid()
+    &-name
+        name()
+    &-price
+        justify-self: center
+        price()

@@ -115,26 +115,41 @@ header div a span {
   font-size: 14px;
   color: #757575;
 }
-.section-one__slider {
+.carousel {
+  position: relative;
   width: 100%;
-  margin-top: 30px;
-  padding: 0 12.5% 0 12.5%;
+  min-width: 320px;
+  overflow-x: scroll;
+  padding: 20px;
 }
-.section-one__slider .section-one__titleCoin {
+.carousel__slider {
+  white-space: nowrap;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.carousel__slider-item {
+  display: inline-block;
+  width: 240px;
+  height: 320px;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+.section-one__titleCoin {
   padding-left: 10px;
   width: 100%;
   font-size: 18px;
   color: #f7931a;
   text-align: start;
 }
-.section-one__slider .section-one__titleComission {
+.section-one__titleComission {
   padding-left: 10px;
   width: 100%;
   font-size: 18px;
   color: #1a9af7;
   text-align: start;
 }
-.section-one__slider .section-one__coin {
+.section-one__coin {
+  margin-top: 10px;
   -ms-grid-columns: 50% 30% 20%;
   grid-template-columns: 50% 30% 20%;
   display: -ms-grid;
@@ -144,55 +159,55 @@ header div a span {
   grid-template-rows: repeat(4, 40px);
   background-color: #fff;
 }
-.section-one__slider .section-one__coin > *:nth-child(1) {
+.section-one__coin > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-.section-one__slider .section-one__coin > *:nth-child(2) {
+.section-one__coin > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
-.section-one__slider .section-one__coin > *:nth-child(3) {
+.section-one__coin > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-.section-one__slider .section-one__coin > *:nth-child(4) {
+.section-one__coin > *:nth-child(4) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
-.section-one__slider .section-one__coin > *:nth-child(5) {
+.section-one__coin > *:nth-child(5) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
 }
-.section-one__slider .section-one__coin > *:nth-child(6) {
+.section-one__coin > *:nth-child(6) {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
 }
-.section-one__slider .section-one__coin > *:nth-child(7) {
+.section-one__coin > *:nth-child(7) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
-.section-one__slider .section-one__coin > *:nth-child(8) {
+.section-one__coin > *:nth-child(8) {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
 }
-.section-one__slider .section-one__coin > *:nth-child(9) {
+.section-one__coin > *:nth-child(9) {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
 }
-.section-one__slider .section-one__coin > *:nth-child(10) {
+.section-one__coin > *:nth-child(10) {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
 }
-.section-one__slider .section-one__coin > *:nth-child(11) {
+.section-one__coin > *:nth-child(11) {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
 }
-.section-one__slider .section-one__coin > *:nth-child(12) {
+.section-one__coin > *:nth-child(12) {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
 }
-.section-one__slider .section-one__coin-name {
+.section-one__coin-name {
   padding-left: 10px;
   text-align: start;
   -ms-flex-item-align: center;
@@ -201,7 +216,7 @@ header div a span {
   color: #757575;
   font-size: 16px;
 }
-.section-one__slider .section-one__coin-price {
+.section-one__coin-price {
   -ms-grid-column-align: end;
       justify-self: end;
   -ms-flex-item-align: center;
@@ -210,7 +225,7 @@ header div a span {
   color: #757575;
   font-size: 14px;
 }
-.section-one__slider .section-one__coin-span1 {
+.section-one__coin-span1 {
   width: 20px;
   height: 20px;
   -ms-grid-column-align: center;
@@ -223,7 +238,7 @@ header div a span {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.section-one__slider .section-one__coin-span2 {
+.section-one__coin-span2 {
   width: 20px;
   height: 20px;
   -ms-grid-column-align: center;
@@ -236,25 +251,26 @@ header div a span {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.section-one__slider .section-one__coin-update {
+.section-one__coin-update {
   padding: 5px;
   margin: 20px auto 40px;
   font-size: 12px;
   background-color: #ffe9d5;
 }
-.section-one__slider .section-one__coin-update span {
+.section-one__coin-update span {
   font-weight: normal;
 }
-.section-one__slider .section-one__comission-update {
+.section-one__comission-update {
   padding: 5px;
   margin: 20px auto 40px;
   font-size: 12px;
   background-color: #e7f5ff;
 }
-.section-one__slider .section-one__comission-update span {
+.section-one__comission-update span {
   font-weight: normal;
 }
-.section-one__slider .section-one__comission {
+.section-one__comission {
+  margin-top: 10px;
   -ms-grid-columns: 60% 40%;
   grid-template-columns: 60% 40%;
   display: -ms-grid;
@@ -264,39 +280,39 @@ header div a span {
   grid-template-rows: repeat(4, 40px);
   background-color: #fff;
 }
-.section-one__slider .section-one__comission > *:nth-child(1) {
+.section-one__comission > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-.section-one__slider .section-one__comission > *:nth-child(2) {
+.section-one__comission > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
-.section-one__slider .section-one__comission > *:nth-child(3) {
+.section-one__comission > *:nth-child(3) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
-.section-one__slider .section-one__comission > *:nth-child(4) {
+.section-one__comission > *:nth-child(4) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
 }
-.section-one__slider .section-one__comission > *:nth-child(5) {
+.section-one__comission > *:nth-child(5) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
 }
-.section-one__slider .section-one__comission > *:nth-child(6) {
+.section-one__comission > *:nth-child(6) {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
 }
-.section-one__slider .section-one__comission > *:nth-child(7) {
+.section-one__comission > *:nth-child(7) {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
 }
-.section-one__slider .section-one__comission > *:nth-child(8) {
+.section-one__comission > *:nth-child(8) {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
 }
-.section-one__slider .section-one__comission-name {
+.section-one__comission-name {
   padding-left: 10px;
   text-align: start;
   -ms-flex-item-align: center;
@@ -305,7 +321,7 @@ header div a span {
   color: #757575;
   font-size: 16px;
 }
-.section-one__slider .section-one__comission-price {
+.section-one__comission-price {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -314,7 +330,8 @@ header div a span {
   color: #757575;
   font-size: 14px;
 }
-.section-two {
+.section-two,
+position relative {
   width: 100%;
   min-width: 320px;
   max-height: 900px;
@@ -331,7 +348,20 @@ header div a span {
   text-align: center;
   background-color: #201e1c;
 }
-.section-two h2 {
+.section-two span,
+position relative span {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  background-image: url("../assets/images/potato.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section-two h2,
+position relative h2 {
   max-height: 50px;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -339,12 +369,14 @@ header div a span {
   line-height: 26px;
   color: #fff;
 }
-.section-two p {
+.section-two p,
+position relative p {
   margin-bottom: 20px;
   font-size: 14px;
   color: #757575;
 }
-.section-two article {
+.section-two article,
+position relative article {
   width: 90%;
   max-height: 170px;
   margin-bottom: 30px;
@@ -360,16 +392,19 @@ header div a span {
       flex-wrap: wrap;
   text-align: start;
 }
-.section-two article img {
+.section-two article img,
+position relative article img {
   margin: 10px 10px;
 }
-.section-two article h3 {
+.section-two article h3,
+position relative article h3 {
   width: 100%;
   padding-left: 10px;
   font-size: 18px;
   color: #fff;
 }
-.section-two article p {
+.section-two article p,
+position relative article p {
   margin: 10px 0 10px 10px;
 }
 .section-three {
@@ -423,11 +458,11 @@ header div a span {
 }
 .section-three__card {
   position: relative;
-  width: 220px;
-  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 190px;
+  height: 250px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -435,8 +470,7 @@ header div a span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin: 10px 10px 10px 10px;
   border-radius: 15px;
   -webkit-box-shadow: 0px 4px 8px 0px rgba(89,73,30,0.161);
           box-shadow: 0px 4px 8px 0px rgba(89,73,30,0.161);
@@ -453,13 +487,13 @@ header div a span {
   background-color: #f7931a;
 }
 .section-three__card-pay {
-  margin-top: 25px;
+  margin-top: 30px;
   font-text: 14px;
   font-weight: bold;
   line-height: 18px;
 }
 .section-three__card-price {
-  margin-top: 30px;
+  margin-top: 25px;
   font-size: 52px;
   line-height: 18px;
   font-weight: bold;
@@ -472,8 +506,10 @@ header div a span {
 }
 .section-three__card-desc {
   max-height: 25px;
-  margin-top: 30px;
+  margin-top: 25px;
+  width: 180px;
   padding: 0 5%;
+  white-space: normal;
   font-size: 12px;
   line-height: 18px;
   color: #757575;
@@ -497,6 +533,19 @@ header div a span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+}
+.carousel__slider {
+  white-space: nowrap;
+}
+.carousel__slider-item {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .footer {
   width: 100%;
