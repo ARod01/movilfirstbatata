@@ -1,0 +1,88 @@
+.section-three
+    width: 100%
+    min-width: 320px
+    content()
+    background-color: color-primary
+    &__img
+        height: 390px
+        width: 100%
+        backgroundImage("../assets/images/bitcoinuser.png")
+        background-size: cover
+        h3
+            margin-top: 65px
+            color: #FFFFFF
+            font-size: 24px
+            line-height: 26px
+    &__text
+        width: 100%
+        margin: 40px 0 30px
+        h3
+            max-height: 50px
+            padding: 0 5%
+            font-size: 24px
+            line-height: 26px
+        p
+            max-height: 30px
+            margin-top: 20px
+            padding: 0 5%
+            font-size: 14px
+            line-height: 18px
+            color: text-grey
+    &__card
+        position: relative
+        width: 220px
+        height: 250px
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top 15px
+        margin-bottom 30px
+        border-radius 15px
+        box-shadow: 0px 4px 8px 0px #59491E29;
+        background-color: #FFFFFF
+        &-recommended
+            position absolute
+            width 120px
+            margin-top -20px
+            padding 10px 15px
+            border-radius 10px
+            color #FFFFFF
+            font-size 12px
+            background-color color-secundary
+        &-pay
+            margin-top 25px
+            font-text 14px
+            font-weight bold
+            line-height: 18px
+        &-price
+            margin-top 30px
+            font-size 52px
+            line-height: 18px
+            font-weight bold
+            span
+                margin-top -10px
+                margin-left -7px
+                position absolute
+                font-size 12px
+        &-desc
+            max-height 25px
+            margin-top 30px
+            padding: 0 5%
+            font-size 12px
+            line-height: 18px
+            color text-grey
+        &-button
+            width 150px
+            margin-top 30px
+            padding 10px 15px
+            border 2px solid color-secundary
+            border-radius 5px
+            font-size 14px
+            font-weight bold
+            background-color color-primary
+            span
+                display inline-block
+                width: 27px
+                height: 15px
+                vertical-align text-bottom
+                backgroundImage("../assets/icons/arrow-right.png")

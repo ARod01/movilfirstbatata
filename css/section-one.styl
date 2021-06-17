@@ -1,0 +1,54 @@
+.section-one
+    width: 100%
+    min-width: 320px
+    content()
+    background-color: color-primary
+    img
+        width: 195px
+        height: 195px
+        margin-top: 50px
+    h2
+        width: 90%
+        max-height: 52px
+        margin-top: 20px
+        font-size: 24px
+        line-height: 26px
+    p   
+        width: 90%
+        max-height: 30px
+        margin-top: 20px
+        font-size: 14px
+        color: text-grey
+
+.section-one__slider
+    width: 100%
+    margin-top: 30px 
+    padding: 0 12.5% 0 12.5%
+    .section-one__titleCoin
+        title(color-secundary)
+    .section-one__titleComission
+        title(#1A9AF7)
+    .section-one__coin
+        grid-template-columns: 50% 30% 20%
+        display-grid()
+        &-name
+            name()
+        &-price
+            justify-self: end
+            price()
+        &-span1
+            trending("../assets/icons/trending-up.png")
+        &-span2
+            trending("../assets/icons/trending-down.png")
+    .section-one__coin-update
+        update(text-orange)
+    .section-one__comission-update
+        update(#E7F5FF)
+    .section-one__comission
+        grid-template-columns: 60% 40%
+        display-grid()
+        &-name
+            name()
+        &-price
+            justify-self: center
+            price()
